@@ -3,7 +3,7 @@ from .type_definitions import *
 
 # Evaluates an expression in the defined environment
 # REQUIRES: x is an expression
-def eval(x, env=standard_env()):
+def eval(x, env=standard_env()) -> Exp:
     if isinstance(x, Symbol):       # variable reference
         return env[x]
     elif isinstance(x, Number):     # number constant

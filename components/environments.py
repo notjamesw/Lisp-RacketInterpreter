@@ -1,4 +1,4 @@
-from components.type_definitions import *
+from .type_definitions import *
 import math
 import operator as op
 

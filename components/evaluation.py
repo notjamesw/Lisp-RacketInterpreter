@@ -1,12 +1,12 @@
-from components.environments import standard_env
-from components.type_definitions import *
+from .environments import standard_env
+from .type_definitions import *
 
 # Evaluates an expression in the defined environment
 # REQUIRES: x is an expression
 def eval(x, env=standard_env()):
-    if isinstance(x, Symbol):
+    if isinstance(x, Symbol):       # variable reference
         return env[x]
-    elif isinstance(x, Number):
+    elif isinstance(x, Number):     # number constant
         return x
     elif x[0] == "if":               # conditional
         (_, test, conseq, alt) = x

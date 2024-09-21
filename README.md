@@ -7,6 +7,7 @@ They can be ran simply by calling `pytest tests`.
 
 Currently the program can only be ran through the `main.py` program. 
 
+Development Python Version: 3.12.6
 ## How the program works
 Program runs in REPL (read-eval-print loop). 
 User input -> parse -> abstract syntax tree -> eval -> print result
